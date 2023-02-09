@@ -77,9 +77,20 @@ button {
     color:#3c3a36;
     box-shadow: 2px 2px #33312d57;
     text-shadow: 2px 2px #6b848586;
+    transition: all .12s ease-in;
 }
-.calculatorOperator{
+button:active {
+    transform: scale(.95);
+    background-color: #424f4f;
+}
+.calculatorOperator, .sqrt{
     background-color: #C0BDDE;
+}
+.calculatorOperator:active, .sqrt:active {
+    background-color: #605f70;
+}
+.delete:active, #equal:active, #clear:active {
+    background-color: #502113;
 }
 .delete {
     grid-column: 3/ span 2;
