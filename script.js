@@ -47,6 +47,7 @@ function clearAll() {
     subDisplay.textContent = '0';
     bananaInput = ''
     valueReturn = ''
+    operator = ''
 }
 function deleteLast() {
     bananaInput = bananaInput.toString();
@@ -93,6 +94,7 @@ function divide(a, b) {
 }
 function sqRoot(a) {
     bananaInput = roundNumber(Math.sqrt(a))
+    subDisplay.textContent = 0;
     mainDisplay.textContent = bananaInput;
 
 }
